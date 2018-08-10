@@ -1,0 +1,294 @@
+body {
+    letter-spacing: -0.5px;
+    word-spacing: 1px;
+}
+
+.header .upper {
+    height: 40px;
+    line-height: 40px;
+    background-color: #494C51;
+    color: white;
+}
+
+.header .upper .upper-item {
+    margin: 0px;
+    height: 100%;
+    float: right;
+}
+
+.header .under-upper {
+    height: 40px;
+    line-height: 40px;
+}
+
+.header .bottom {
+    height: 40px;
+    line-height: 40px;
+    border-top: 1px solid #494C51;
+}
+
+.header .bottom .item {
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+.active:after {
+    content: "";
+    display: block;
+    width: 100px;
+    margin: -6px auto 0;
+    border-bottom: 5px solid #95C11F;
+}
+
+.wide {
+    padding: 0px 20px;
+}
+
+.narrow {
+    padding: 0px 10px;
+}
+
+.no-padding {
+    padding: 0px;
+}
+
+.fa {
+    font-size: 20px;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.info-div {
+    display: inline-block;
+    padding: 5px 25px;
+    line-height: 90%;
+}
+
+.valign {
+    margin: auto;
+}
+
+.green {
+    background-color: #95C11F;
+    color: white;
+}
+
+.blue {
+    background-color: #0092D0;
+    color: white;
+}
+
+.gray {
+    background-color: #494C51;
+    color: white;
+}
+
+.blue-text {
+    color: #0092D0;
+}
+
+.gray-text {
+    color: #494C51;
+}
+
+.vhr {
+    padding: 0px !important;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.bigger {
+    font-size: 20px;
+}
+
+.logo {
+    max-width: 100%;
+}
+
+.img-caption {
+    position: relative;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 5px 10px;
+    margin-bottom: 20px;
+}
+
+div.section {
+    padding: 10px 0px;
+}
+
+h5 {
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+h5:after {
+    content: "";
+    display: block;
+    width: 100px;
+    margin: 5px auto 15px;
+    border-bottom: 5px solid #95C11F;
+}
+
+.triple-img-container img {
+    border-bottom: 3px solid #0092D0;
+    width: 100%;
+    opacity: 0;
+    display: block;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.triple-img-container img:hover {
+    opacity: 0.9;
+}
+
+.triple-img-container div.plus-icon:after {
+    content: "+";
+    display: block;
+    width: 25px;
+    height: 25px;
+    line-height: 20px;
+    border-radius: 100%;
+    background-color: #0092D0;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin: auto;
+    transform: translateY(-50%);
+}
+
+#house1 {
+    background-image: url('../img/house1.jpg');
+    background-size: cover;
+}
+
+#house2 {
+    background-image: url('../img/house2.jpg');
+    background-size: cover;
+}
+
+#house3 {
+    background-image: url('../img/house3.jpg');
+    background-size: cover;
+}
+
+.text-over {
+    background-image: url("../img/pic2.jpg");
+    width: 100%;
+    background-size: cover;
+}
+
+.text-over .cover {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+button {
+    background-color: #0092D0;
+    color: white;
+    border: none;
+    padding: 10px 40px;
+    margin: 10px 0px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul li:before {
+    content: " - ";
+    padding-right: 10px;
+}
+
+table.concept {
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+   
+table.concept tr td {
+    width: 50%;
+}
+
+table.concept tr td[rowspan] {
+    background-image: url('../img/house3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer .upper .fa {
+    font-size: 30px;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+.footer .bottom {
+    padding: 10px 0px 0px 0px;
+    background-color: #494C51;
+    color: white;
+}
+
+.footer .bottom img {
+    max-width: 100%;
+}
+
+.footer .bottom div {
+    padding: 5px;
+}
+
+div.hr {
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+
+@media screen and (max-width: 544px) {
+    .section div {
+        margin: 0px;
+    }
+
+    span.xs-wrap {
+        display: block;
+        color: #494C51;
+        height: 0px;
+    }
+    
+    .container {
+        margin: 10px;
+    }
+}
+
+@media screen and (min-width: 544px) {
+    .img-caption {
+        transform: translateY(-100%);
+        margin-bottom: -30px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .md-narrower {
+        width: 70%;
+    }
+
+    .text-over .cover {
+        padding: 5% 30% !important;
+    }
+
+    table.concept tr td {
+        width: 25%;
+    }
+}
