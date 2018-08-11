@@ -4,38 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>MAXIMHOME</title>
 </head>
 <body>
     <div class="header container-fluid">
         <div class="upper row">
-            <div class="hidden-xs-down hidden-md-up col-sm-1"><i class="fa fa-bars" aria-hidden="true"></i></div>
-            <div class="hidden-sm-down col-6 text-center">Vente et installation de poêles et cheminées</div>
-            <div class="col-12 col-sm-11 col-md-6 text-right no-padding">
-                <div class="upper-item narrow hidden-xs-down"><i class="fa fa-search" aria-hidden="true"></i></div>
-                <div class="upper-item vhr hidden-xs-down">|</div>
-                <div class="upper-item narrow hidden-xs-down"><i class="fa fa-share-alt" aria-hidden="true"></i></div>
-                <div class="upper-item wide blue">Contact</div>
-                <div class="upper-item wide green">Devis</div>
-                <div class="upper-item wide">Maxim'Home</div>
+            <div class="col-12 no-padding">
+                <div class="container">
+                    <div class="row">
+                        <div class="d-none d-sm-block d-md-none col-sm-1"><i class="fa fa-bars" aria-hidden="true"></i></div>
+                        <div class="d-none d-md-block col-6">Vente et installation de poêles et cheminées</div>
+                        <div class="col-12 col-sm-11 col-md-6 text-right no-padding">
+                            <div class="upper-item narrow d-none d-sm-block"><i class="fa fa-search" aria-hidden="true"></i></div>
+                            <div class="upper-item vhr d-none d-sm-block">|</div>
+                            <div class="upper-item narrow d-none d-sm-block"><i class="fa fa-share-alt" aria-hidden="true"></i></div>
+                            <div class="upper-item wide blue">Contact</div>
+                            <div class="upper-item wide green">Devis</div>
+                            <div class="upper-item wide">Maxim'Home</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="under-upper row hidden-sm-up gray-text">
+        <div class="under-upper row d-sm-none gray-text">
             <div class="col"><i class="fa fa-bars" aria-hidden="true"></i></div>
             <div class="col blue-text font-weight-bold">03.20.98.33.74</div>
             <div class="col text-right"><i class="fa fa-share-alt" aria-hidden="true"></i> <span class="upper-item vhr">|</span> <i class="fa fa-search" aria-hidden="true"></i></div>
         </div>
         <div class="middle row">
-            <div class="col-12 col-sm-7 text-center text-sm-left text-md-center"><img class="logo" src="img/logo.png" alt=""></div>
-            <div class="hidden-xs-down col-sm-5 text-right text-md-center valign">
-                <div class="blue-text font-weight-bold text-right inline-block"><i class="fa fa-mobile" aria-hidden="true"></i> 03.20.98.33.74</div><br>
-                <div class="gray text-right info-div">Demandez votre<br>devis gratuit</div>
+            <div class="col">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-7 text-center text-sm-left"><img class="logo" src="img/logo.png" alt=""></div>
+                        <div class="d-none d-sm-block col-sm-5 text-right valign">
+                            <div class="blue-text font-weight-bold text-right inline-block"><i class="fa fa-mobile" aria-hidden="true"></i> 03.20.98.33.74</div><br>
+                            <div class="gray text-right info-div">Demandez votre<br>devis gratuit</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="bottom row hidden-sm-down">
+        <div class="bottom row d-none d-md-block">
             <div class="col text-center">
                 <div class="inline-block item active">Poeles et inserts a granules</div>
                 <div class="inline-block item">Poeles a bois</div>
@@ -45,7 +58,7 @@
             </div>
         </div>
     </div>
-    <img class="full-width" src="img/pic1.jpg" alt="">
+    <img class="full-width" src="img/banner.png" alt="">
     <div class="img-caption text-left text-md-center"><span class="bigger">LOREM IPSUM DOLOR SIT AMET,</span><br>Lorem ipsum dolor sit amet, consectelur adipiscing elit, ln ut odio purus.</div>
     <div class="section container md-narrower">
         <div class="row">
@@ -54,22 +67,25 @@
                 <div class="triple-img-container row">
                     <div class="col-sm-4 col-12">
                         <div class="plus-icon">
-                            <div id="house1">
-                                <img class="hover" src="img/hover1.jpg" alt="">
+                            <div class="house" id="house1">
+                                <img class="hover" src="img/hover-1.jpg" alt="">
+                                <p class="hover-text">Poeles et inserts a granules</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-4 col-12">
                         <div class="plus-icon">
-                            <div id="house2">
-                                <img class="hover" src="img/hover2.jpg" alt="">
+                            <div class="house" id="house2">
+                                <img class="hover" src="img/hover-2.jpg" alt="">
+                                <p class="hover-text">Poeles a bois</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-4 col-12">
                         <div class="plus-icon">
-                            <div id="house3">
-                                <img class="hover" src="img/hover3.jpg" alt="">
+                            <div class="house" id="house3">
+                                <img class="hover" src="img/hover-3.jpg" alt="">
+                                <p class="hover-text">Inserts et foyer abois</p>
                             </div>
                         </div>
                     </div>
@@ -113,18 +129,28 @@
             </div>
         </div>
     </div>
-    <table class="concept">
-        <tr>
-            <td><img class="full-width" src="img/house1.jpg" alt=""></td>
-            <td rowspan="2"></td>
-            <td class="hidden-sm-down"><img class="full-width" src="img/house1.jpg" alt=""></td>
-            <td rowspan="2" class="hidden-sm-down"></td>
-        </tr>
-        <tr>
-            <td><img class="full-width" src="img/house2.jpg" alt=""></td>
-            <td class="hidden-sm-down"><img class="full-width" src="img/house2.jpg" alt=""></td>
-        </tr>
-    </table>
+    <div class="picture-grid">
+        <div class="row">
+            <div class="col-3">
+                <div class="row">
+                    <div class="col-12" style="padding-bottom: 2px"><img src="./img/grid-1.png" alt=""></div>
+                    <div class="col-12" style="padding-top: 2px"><img src="./img/grid-2.png" alt=""></div>
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="./img/grid-3.png" alt="">
+            </div>
+            <div class="col-3">
+                <div class="row">
+                    <div class="col-12" style="padding-bottom: 2px"><img src="./img/grid-4.png" alt=""></div>
+                    <div class="col-12" style="padding-top: 2px"><img src="./img/grid-5.png" alt=""></div>
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="./img/grid-6.png" alt="">
+            </div>
+        </div>
+    </div>
     <div class="footer container-fluid">
         <div class="upper row">
             <div class="col-12 col-sm-4 text-center"><i class="fa fa-file-text-o" aria-hidden="true"></i><sup> DEMADERS UN DEVIS</sup></div>
@@ -146,25 +172,28 @@
                         Tel: 03.20.98.33.74
                         contact@maxin-home-com
                     </div>
-                    <div class="col-12 text-center col-sm-6 text-sm-right text-md-left col-md-3 push-md-4">
+                    <div class="col-12 text-center col-sm-6 text-sm-right text-md-left col-md-3 order-md-3">
                         <span class="bigger">HORAES SHOWROOM</span><br>
                         Du Madious au Saumdi
                         10h00 - 13h00
                         14h00 - 18h00
                     </div>
-                    <div class="col-12 text-center col-sm-6 text-sm-left col-md-4 pull-md-3 hidden-xs-down"><img class="full-width" src="img/map.jpg" alt=""></div>
-                    <div class="col-12 text-center col-sm-6 text-sm-right text-md-left col-md-2"><img src="img/banner.jpg" alt=""></div>
+                    <div class="col-12 text-center col-sm-6 text-sm-left col-md-4 .d-none .d-sm-block order-md-2"><img class="full-width" src="img/map.png" alt=""></div>
+                    <div class="col-12 text-center col-sm-6 text-sm-right text-md-left col-md-2 order-md-4"><img src="img/quali-bois.png" alt=""></div>
                 </div>
                 <div class="hr"></div>
                 <div class="row">
                     <div class="col-12 col-md-7 text-center text-md-left">Metion legades <span class="xs-wrap">-</span> Cookies <span class="xs-wrap">-</span> Plan du site <span class="xs-wrap">-</span> Devis <span class="xs-wrap">-</span> Contact</div>
-                    <div class="hr hidden-sm-up"></div>
+                    <div class="hr hidden-sm.d-block .d-sm-none"></div>
                     <div class="col-12 col-md-5 text-center text-md-right">Creation et referecement : <b>DIABOLO WEB</b></div>
                 </div>
             </div>
 
         </div>
-
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
 </body>
 </html>

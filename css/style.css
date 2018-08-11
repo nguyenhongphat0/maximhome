@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+@font-face {
+    font-family: 'Century Gothic';
+    src: url(../font/centurygothic.ttf)
+}
+* {
+    font-family: 'Noto Sans', sans-serif;
+}
+
 body {
     letter-spacing: -0.5px;
     word-spacing: 1px;
@@ -6,8 +15,14 @@ body {
 .header .upper {
     height: 40px;
     line-height: 40px;
+    overflow: hidden;
     background-color: #494C51;
     color: white;
+}
+
+.header .upper .container {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .header .upper .upper-item {
@@ -111,6 +126,9 @@ body {
 
 .logo {
     max-width: 100%;
+    max-height: 125px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .img-caption {
@@ -126,6 +144,7 @@ div.section {
 }
 
 h5 {
+    font-family: "Century Gothic", sans-serif;
     font-size: 20px;
     font-weight: normal;
     text-transform: uppercase;
@@ -141,7 +160,6 @@ h5:after {
 }
 
 .triple-img-container img {
-    border-bottom: 3px solid #0092D0;
     width: 100%;
     opacity: 0;
     display: block;
@@ -149,11 +167,35 @@ h5:after {
     cursor: pointer;
 }
 
-.triple-img-container img:hover {
-    opacity: 0.9;
+.triple-img-container img:hover, .triple-img-container img:hover + .hover-text {
+    opacity: 0.8;
 }
 
-.triple-img-container div.plus-icon:after {
+.triple-img-container .hover-text {
+    position: absolute;
+    width: 80%;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    color: white;
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+
+.triple-img-container .plus-icon > div {
+    box-sizing: border-box;
+    border-bottom: 3px solid #0092D0;
+    height: 0px;
+    padding-bottom: 100%;
+    overflow: hidden;
+}
+
+.triple-img-container .plus-icon > div:hover {
+    border-bottom: 3px solid rgba(0, 0, 0, 0.9);
+}
+
+.triple-img-container .plus-icon:after {
     content: "+";
     display: block;
     width: 25px;
@@ -168,25 +210,28 @@ h5:after {
     transform: translateY(-50%);
 }
 
-#house1 {
-    background-image: url('../img/house1.jpg');
+.triple-img-container .house {
     background-size: cover;
+    background-position: center;
+}
+
+#house1 {
+    background-image: url('../img/triple-1.png');
 }
 
 #house2 {
-    background-image: url('../img/house2.jpg');
-    background-size: cover;
+    background-image: url('../img/triple-2.png');
 }
 
 #house3 {
-    background-image: url('../img/house3.jpg');
-    background-size: cover;
+    background-image: url('../img/triple-3.png');
 }
 
 .text-over {
-    background-image: url("../img/pic2.jpg");
+    background-image: url("../img/background.png");
     width: 100%;
     background-size: cover;
+    background-position: center;
 }
 
 .text-over .cover {
@@ -204,6 +249,7 @@ button {
     border: none;
     padding: 10px 40px;
     margin: 10px 0px;
+    cursor: pointer;
 }
 
 ul li {
@@ -215,19 +261,25 @@ ul li:before {
     padding-right: 10px;
 }
 
-table.concept {
-    border-collapse: separate;
-    border-spacing: 5px;
+.picture-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-   
-table.concept tr td {
-    width: 50%;
+.picture-grid .row, .picture-grid .col-3 {
+    height: 50vh;
+    overflow: hidden;
+}
+.picture-grid .col-3, .picture-grid .col {
+    overflow: hidden;
+}
+.picture-grid .col-3 {
+    height: 100%;
+    padding: 0px 2px;
 }
 
-table.concept tr td[rowspan] {
-    background-image: url('../img/house3.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+.picture-grid .col-12 {
+    height: 50%;
 }
 
 .footer .upper .fa {
