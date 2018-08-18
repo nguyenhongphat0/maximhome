@@ -7,11 +7,6 @@
     font-family: 'Noto Sans', sans-serif;
 }
 
-body {
-    letter-spacing: -0.5px;
-    word-spacing: 1px;
-}
-
 .header .upper {
     height: 40px;
     line-height: 40px;
@@ -261,19 +256,22 @@ ul li:before {
     padding-right: 10px;
 }
 
+.picture-grid {
+    overflow: hidden;
+}
 .picture-grid img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.picture-grid .row, .picture-grid .col-3 {
+.picture-grid .row, .picture-grid .col-md-3 {
     height: 50vh;
     overflow: hidden;
 }
-.picture-grid .col-3, .picture-grid .col {
+.picture-grid .col-md-3, .picture-grid .col {
     overflow: hidden;
 }
-.picture-grid .col-3 {
+.picture-grid .col-md-3 {
     height: 100%;
     padding: 0px 2px;
 }
@@ -282,11 +280,20 @@ ul li:before {
     height: 50%;
 }
 
-.footer .upper .fa {
-    font-size: 30px;
-    height: 40px;
-    line-height: 40px;
-    margin-bottom: 10px;
+.footer * {
+    font-family: "Century Gothic", sans-serif;
+}
+
+.footer .upper {
+    line-height: 60px;
+}
+
+.footer .upper img {
+    width: 30px;
+}
+
+.footer .upper span {
+    font-size: 14px;
 }
 
 .footer .bottom {
